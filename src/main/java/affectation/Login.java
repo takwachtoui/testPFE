@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Login {
@@ -87,9 +88,54 @@ public class Login {
         passField.sendKeys(pass);
     }
 
-    public void enterDatenaissance(String datenaissance) {
-        WebDriverWait wait = new WebDriverWait(driver, 10); // Wait for up to 10 seconds
-        WebElement datenaissanceField = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@name='mdp_c']"))); // Replace with the actual ID of the cin field
-        datenaissanceField.sendKeys(datenaissance);
+
+    public void clickDatenaissance() {
+        // Click on the date picker field to open the date picker popup
+        WebElement datenaissanceField = driver.findElement(By.xpath("//input[@class=\"MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd css-1h9uykw-MuiInputBase-input-MuiOutlinedInput-input\"]"));
+        datenaissanceField.click();
+
+       /* // You may need to wait for the date picker popup to appear
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@class=\"MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd css-1h9uykw-MuiInputBase-input-MuiOutlinedInput-input\"]"))); // Replace with the actual locator for the date picker popup
+
+        // Assuming your date picker allows selecting day, month, and year separately
+        WebElement dayField = driver.findElement(By.xpath("//button[contains(@class, 'MuiButtonBase-root MuiPickersDay-root MuiPickersDay-dayWithMargin') and @aria-colindex='4' and @data-timestamp='1764716400000'] "));
+        dayField.click();
+
+        WebElement monthField = driver.findElement(By.xpath("//div[contains(@class, 'MuiPickersMonth-month') and text()='YourMonthName']")); // Replace 'YourMonthName' with the actual month name
+        monthField.click();
+
+        WebElement yearField = driver.findElement(By.xpath("//div[contains(@class, 'MuiPickersYear-year') and text()='" + year + "']"));
+        yearField.click();*/
     }
+
+    public void enterDate(String date) {
+        WebDriverWait wait = new WebDriverWait(driver, 10); // Wait for up to 10 seconds
+        WebElement dateField = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@class=\"MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd css-1h9uykw-MuiInputBase-input-MuiOutlinedInput-input\"]"))); // Replace with the actual ID of the cin field
+        dateField.sendKeys(date);
+    }
+
+    public void selectGender(String gender) {
+        if (gender.equalsIgnoreCase("femme")) {
+            WebElement femmeRadioButton = driver.findElement(By.xpath("//input[@value=\"Femme\"]")); // Remplacez cette expression XPath par celle correspondant au bouton radio "Femme"
+            if (!femmeRadioButton.isSelected()) {
+                femmeRadioButton.click();
+            }
+        }
+        // Vous pouvez ajouter d'autres options pour les autres genres si nécessaire.
+    }
+
+   /* public void selectConsultant() {
+        WebElement consultantDropdown = driver.findElement(By.xpath("//div[@class=\"MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorInfo MuiInputBase-formControl  css-1cc0o68-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root\"]")); // Remplacez par l'expression XPath appropriée pour la liste déroulante
+        Select dropdown = new Select(consultantDropdown);
+        dropdown.selectByVisibleText("Consultant");
+    }*/
+
+    public void clickDrop() {
+        // Click on the date picker field to open the date picker popup
+        WebElement dropField = driver.findElement(By.id("simple-select-label"));
+        dropField.click();
+    }
+
+
 }

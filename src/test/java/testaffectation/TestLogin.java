@@ -45,7 +45,7 @@ public class TestLogin {
 
         // Pause for a few seconds to observe the result (replace with explicit wait in real tests)
         try {
-            Thread.sleep(4000); // Sleep for 4 seconds (4000 milliseconds)
+            Thread.sleep(2000); // Sleep for 4 seconds (4000 milliseconds)
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -55,15 +55,41 @@ public class TestLogin {
 
         loginPage.enterMatricule("9654");
 
-        loginPage.enterCin("19658745");
-        loginPage.enterCin("11111111");
+        loginPage.enterCin("0");
+        loginPage.enterCin("9");
+        loginPage.enterCin("9");
+        loginPage.enterCin("3");
+        loginPage.enterCin("1");
+        loginPage.enterCin("0");
+        loginPage.enterCin("5");
+        loginPage.enterCin("0");
 
         loginPage.enterName("Takwa");
         loginPage.enterPrenom("Chtioui");
-        loginPage.enterContact("94125896");
+
+        loginPage.enterContact("9");
+        loginPage.enterContact("4");
+        loginPage.enterContact("9");
+        loginPage.enterContact("3");
+        loginPage.enterContact("1");
+        loginPage.enterContact("0");
+        loginPage.enterContact("5");
+        loginPage.enterContact("0");
+
         loginPage.enterAddress("Lac2");
         loginPage.enterEmail("Takwa@gmail.com");
         loginPage.enterPass("1199");
+
+
+        loginPage.clickDatenaissance();
+
+
+        loginPage.enterDate("01221995");
+
+        loginPage.selectGender("femme");
+
+
+        loginPage.clickDrop();
     }
 
 
