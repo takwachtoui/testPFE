@@ -1,35 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-15T22:43:57 CEST" name="Command line suite" finished-at="2023-09-15T22:44:19 CEST" duration-ms="22468">
+  <suite started-at="2023-10-08T01:48:20 CEST" name="MyTestSuite" finished-at="2023-10-08T01:48:43 CEST" duration-ms="23627">
     <groups>
     </groups>
-    <test started-at="2023-09-15T22:43:57 CEST" name="Command line test" finished-at="2023-09-15T22:44:19 CEST" duration-ms="22468">
+    <test started-at="2023-10-08T01:48:20 CEST" name="LoginAndAjoutConsultant" finished-at="2023-10-08T01:48:43 CEST" duration-ms="23627">
       <class name="testaffectation.TestLogin">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testaffectation.TestLogin@3224f60b]" started-at="2023-09-15T22:43:57 CEST" name="setUp" finished-at="2023-09-15T22:44:05 CEST" duration-ms="8122" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testaffectation.TestLogin@1efed156]" started-at="2023-10-08T01:48:20 CEST" name="setUp" finished-at="2023-10-08T01:48:28 CEST" duration-ms="8177" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testLogin()[pri:1, instance:testaffectation.TestLogin@3224f60b]" started-at="2023-09-15T22:44:05 CEST" name="testLogin" finished-at="2023-09-15T22:44:19 CEST" duration-ms="14277" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        <test-method signature="testLogin()[pri:1, instance:testaffectation.TestLogin@1efed156]" started-at="2023-10-08T01:48:28 CEST" name="testLogin" finished-at="2023-10-08T01:48:32 CEST" duration-ms="3904" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+      </class> <!-- testaffectation.TestLogin -->
+      <class name="testaffectation.TestAjoutConsultant">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testaffectation.TestAjoutConsultant@9660f4e]" started-at="2023-10-08T01:48:32 CEST" name="setUp" finished-at="2023-10-08T01:48:39 CEST" duration-ms="7718" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAjoutConsultant()[pri:1, instance:testaffectation.TestAjoutConsultant@9660f4e]" started-at="2023-10-08T01:48:39 CEST" name="testAjoutConsultant" finished-at="2023-10-08T01:48:39 CEST" duration-ms="50" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[element click intercepted: Element <label class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorInfo MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-nid5le-MuiFormLabel-root-MuiInputLabel-root" data-shrink="false" id="simple-select-label">...</label> is not clickable at point (490, 630). Other element would receive the click: <div tabindex="0" role="button" aria-expanded="false" aria-haspopup="listbox" aria-labelledby="simple-select" id="simple-select" class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-v3zyv7-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input">...</div>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//li[4]//div[1]//span[2]"}
   (Session info: chrome=117.0.5938.63)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'ITMTNR0AKF7H', ip: '10.1.40.41', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.63, chrome: {chromedriverVersion: 117.0.5938.62 (25a7172909a4..., userDataDir: C:\Users\TAKWAC~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56774}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3a9c6f7565bd5b2f2b76aedb03fa28a5]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.63, chrome: {chromedriverVersion: 117.0.5938.62 (25a7172909a4..., userDataDir: C:\Users\TAKWAC~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59729}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 33557d3ddbc3abf68f6e980a7fa746d2
+*** Element info: {Using=xpath, value=//li[4]//div[1]//span[2]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <label class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorInfo MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-nid5le-MuiFormLabel-root-MuiInputLabel-root" data-shrink="false" id="simple-select-label">...</label> is not clickable at point (490, 630). Other element would receive the click: <div tabindex="0" role="button" aria-expanded="false" aria-haspopup="listbox" aria-labelledby="simple-select" id="simple-select" class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-v3zyv7-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input">...</div>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//li[4]//div[1]//span[2]"}
   (Session info: chrome=117.0.5938.63)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'ITMTNR0AKF7H', ip: '10.1.40.41', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.63, chrome: {chromedriverVersion: 117.0.5938.62 (25a7172909a4..., userDataDir: C:\Users\TAKWAC~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56774}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3a9c6f7565bd5b2f2b76aedb03fa28a5
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.63, chrome: {chromedriverVersion: 117.0.5938.62 (25a7172909a4..., userDataDir: C:\Users\TAKWAC~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59729}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 33557d3ddbc3abf68f6e980a7fa746d2
+*** Element info: {Using=xpath, value=//li[4]//div[1]//span[2]}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -41,10 +55,12 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-at affectation.Login.clickDrop(Login.java:137)
-at testaffectation.TestLogin.testLogin(TestLogin.java:90)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at affectation.AjoutConsultant.clickCompteButton(AjoutConsultant.java:18)
+at testaffectation.TestAjoutConsultant.testAjoutConsultant(TestAjoutConsultant.java:22)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -70,14 +86,18 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
 at org.testng.TestNG.runSuites(TestNG.java:1063)
 at org.testng.TestNG.run(TestNG.java:1031)
-at testaffectation.AppTest.main(AppTest.java:16)
+at testaffectation.AppTest.main(AppTest.java:43)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAjoutConsultant -->
+        <test-method signature="testLogin()[pri:1, instance:testaffectation.TestAjoutConsultant@9660f4e]" started-at="2023-10-08T01:48:39 CEST" name="testLogin" finished-at="2023-10-08T01:48:43 CEST" duration-ms="3689" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-      </class> <!-- testaffectation.TestLogin -->
-    </test> <!-- Command line test -->
-  </suite> <!-- Command line suite -->
+      </class> <!-- testaffectation.TestAjoutConsultant -->
+    </test> <!-- LoginAndAjoutConsultant -->
+  </suite> <!-- MyTestSuite -->
 </testng-results>

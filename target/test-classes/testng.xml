@@ -1,9 +1,11 @@
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="MyTestSuite">
-    <test name="LoginAndCompteTest">
+<suite name="SeleniumTestSuite">
+    <test name="TestAffectation">
         <classes>
             <class name="testaffectation.TestLogin"/>
-         </classes>
-     </test>
- </suite>
-
+            <class name="testaffectation.TestClient"/>
+            <class name="testaffectation.TestProject"/>
+            <class name="testaffectation.TestAjoutConsultant"/>
+            <class name="testaffectation.TestAjoutManagerInetum"/>
+        </classes>
+    </test>
+</suite>
